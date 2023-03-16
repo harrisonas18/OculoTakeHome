@@ -18,22 +18,27 @@ struct SleepChartView: View {
                     .foregroundColor(Colors.cellSubTitleText)
                 Chart {
                     BarMark(
-                            x: .value("Shape Type", "Cube"),
-                            y: .value("Total Count", 5)
+                            x: .value("Shape Type", "12 AM - 02 AM"),
+                            y: .value("Total Count", 1)
                         )
                     BarMark(
-                            x: .value("Shape Type", "Sphere"),
-                            y: .value("Total Count", 6)
+                            x: .value("Shape Type", "02 AM"),
+                            y: .value("Total Count", 1)
                         )
                     BarMark(
-                            x: .value("Shape Type", "Square"),
-                            y: .value("Total Count", 3)
+                            x: .value("Shape Type", "04 AM"),
+                            y: .value("Total Count", 1)
                         )
                     BarMark(
-                            x: .value("Shape Type", "Circle"),
+                            x: .value("Shape Type", "06 AM"),
+                            y: .value("Total Count", 1)
+                        )
+                    BarMark(
+                            x: .value("Shape Type", "08 AM"),
                             y: .value("Total Count", 1)
                         )
                 }
+                .foregroundColor(Colors.sleepCellChartData)
                 .frame(height: 50)
             }
             Spacer()

@@ -15,18 +15,22 @@ struct BurnSummaryView: View {
     var body: some View {
         ScrollView {
             VStack {
-                HStack {
-                    Spacer()
-                    Text("BURN SUMMARY")
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .font(.system(size: 18))
-                    Spacer()
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(systemName: "xmark")
+                ZStack {
+                    HStack {
+                        Text("BURN SUMMARY")
                             .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .font(.system(size: 18))
+                        
+                    }
+                    HStack {
+                        Spacer()
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.white)
+                        }
                     }
                 }
                 BurnView()
@@ -46,8 +50,8 @@ struct BurnSummaryView: View {
                 }
                 .popover(isPresented: $vm.showAddGoalsPopover) {
                     AddGoalsPopoverView()
+                        .background(Colors.clearColor)
                 }
-                
             }
             .padding()
         }

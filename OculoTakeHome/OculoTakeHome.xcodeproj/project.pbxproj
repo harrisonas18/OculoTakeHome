@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */; };
-		814A46D529C38365007E1C12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46D429C38365007E1C12 /* ContentView.swift */; };
 		814A46D729C38367007E1C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814A46D629C38367007E1C12 /* Assets.xcassets */; };
 		814A46DA29C38367007E1C12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814A46D929C38367007E1C12 /* Preview Assets.xcassets */; };
 		814A46E429C38367007E1C12 /* OculoTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46E329C38367007E1C12 /* OculoTakeHomeTests.swift */; };
 		814A46EE29C38367007E1C12 /* OculoTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */; };
 		814A46F029C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */; };
-		814A470029C3848C007E1C12 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46FF29C3848C007E1C12 /* ContentViewModel.swift */; };
 		814A470229C384E9007E1C12 /* BurnSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470129C384E9007E1C12 /* BurnSummaryView.swift */; };
 		814A470429C384F6007E1C12 /* BurnSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */; };
 		814A470629C3864C007E1C12 /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470529C3864C007E1C12 /* SleepChartView.swift */; };
@@ -49,7 +47,6 @@
 /* Begin PBXFileReference section */
 		814A46CF29C38365007E1C12 /* OculoTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OculoTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeApp.swift; sourceTree = "<group>"; };
-		814A46D429C38365007E1C12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		814A46D629C38367007E1C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		814A46D929C38367007E1C12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		814A46DF29C38367007E1C12 /* OculoTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OculoTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +54,6 @@
 		814A46E929C38367007E1C12 /* OculoTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OculoTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITests.swift; sourceTree = "<group>"; };
 		814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		814A46FF29C3848C007E1C12 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		814A470129C384E9007E1C12 /* BurnSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnSummaryView.swift; sourceTree = "<group>"; };
 		814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnSummaryViewModel.swift; sourceTree = "<group>"; };
 		814A470529C3864C007E1C12 /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
@@ -97,6 +93,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810A23CB29C3CEF100A8ED08 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		814A46C629C38365007E1C12 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +123,7 @@
 		814A46D129C38365007E1C12 /* OculoTakeHome */ = {
 			isa = PBXGroup;
 			children = (
-				814A46FE29C38459007E1C12 /* ContentView */,
+				810A23CB29C3CEF100A8ED08 /* Custom Views */,
 				814A46FD29C3842E007E1C12 /* AddGoals */,
 				814A46FC29C3841A007E1C12 /* BurnSummary */,
 				814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */,
@@ -179,15 +182,6 @@
 				814A471729C3B7C9007E1C12 /* GoalCellViewEnabled.swift */,
 			);
 			path = AddGoals;
-			sourceTree = "<group>";
-		};
-		814A46FE29C38459007E1C12 /* ContentView */ = {
-			isa = PBXGroup;
-			children = (
-				814A46D429C38365007E1C12 /* ContentView.swift */,
-				814A46FF29C3848C007E1C12 /* ContentViewModel.swift */,
-			);
-			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,11 +324,9 @@
 				814A470E29C3932D007E1C12 /* AddGoalsPopoverView.swift in Sources */,
 				814A470829C3865B007E1C12 /* ActivityChartView.swift in Sources */,
 				814A471429C39B3F007E1C12 /* BurnView.swift in Sources */,
-				814A46D529C38365007E1C12 /* ContentView.swift in Sources */,
 				814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */,
 				814A471629C3B223007E1C12 /* GoalCellViewDisabled.swift in Sources */,
 				814A471029C3933A007E1C12 /* AddGoalsPopoverViewModel.swift in Sources */,
-				814A470029C3848C007E1C12 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

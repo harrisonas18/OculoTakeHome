@@ -18,22 +18,22 @@ struct CaffeineChartView: View {
                     .foregroundColor(Colors.cellSubTitleText)
                 Chart {
                     BarMark(
-                            x: .value("Shape Type", "Cube"),
-                            y: .value("Total Count", 5)
+                            x: .value("Shape Type", "12 AM - 02 AM")
                         )
                     BarMark(
-                            x: .value("Shape Type", "Sphere"),
-                            y: .value("Total Count", 6)
+                            x: .value("Shape Type", "02 AM - 04 AM")
                         )
                     BarMark(
-                            x: .value("Shape Type", "Square"),
-                            y: .value("Total Count", 3)
+                            x: .value("Shape Type", "04 AM - 06 AM")
                         )
                     BarMark(
-                            x: .value("Shape Type", "Circle"),
-                            y: .value("Total Count", 1)
+                            x: .value("Shape Type", "06 AM - 08 AM")
+                        )
+                    BarMark(
+                            x: .value("Shape Type", "08 AM - 10 AM")
                         )
                 }
+                .foregroundColor(Colors.caffeineCellChartData)
                 .frame(height: 50)
             }
             Spacer()

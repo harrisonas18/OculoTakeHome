@@ -27,5 +27,6 @@ struct Colors {
     static let cellSubTitleText = Color("CellSubTitleText")
     static let burnGraphicGradient1 = Color("BurnGraphicGradient1")
     static let burnGraphicGradient2 = Color("BurnGraphicGradient2")
+    static let clearColor = Color("ClearColor")
     
 }

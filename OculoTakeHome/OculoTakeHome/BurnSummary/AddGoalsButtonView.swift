@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddGoalsButtonView: View {
     var body: some View {
-        HStack(spacing: 8){
+        HStack(spacing: 16){
             Image(systemName: "staroflife.fill")
                 .resizable()
                 .foregroundColor(Colors.cellSubTitleText)
@@ -18,12 +18,14 @@ struct AddGoalsButtonView: View {
             Text("Complete goals to improve your health and burn")
                 .foregroundColor(Colors.cellSubTitleText)
                 .fontWeight(.semibold)
+                .font(.system(size: 18))
+                .multilineTextAlignment(.leading)
             Image(systemName: "arrow.right")
                 .foregroundColor(Colors.cellSubTitleText)
                 
         }
+        .padding(EdgeInsets(top: 16, leading: 8, bottom: 16, trailing: 8))
         .frame(maxWidth: .infinity)
-        .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
         .background(Colors.addGoalsPopoverButton)
         .cornerRadius(8)
     }
