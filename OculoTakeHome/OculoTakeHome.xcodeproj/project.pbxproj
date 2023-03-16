@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */; };
+		814A46D529C38365007E1C12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46D429C38365007E1C12 /* ContentView.swift */; };
+		814A46D729C38367007E1C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814A46D629C38367007E1C12 /* Assets.xcassets */; };
+		814A46DA29C38367007E1C12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814A46D929C38367007E1C12 /* Preview Assets.xcassets */; };
+		814A46E429C38367007E1C12 /* OculoTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46E329C38367007E1C12 /* OculoTakeHomeTests.swift */; };
+		814A46EE29C38367007E1C12 /* OculoTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */; };
+		814A46F029C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		814A46E029C38367007E1C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814A46C729C38365007E1C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814A46CE29C38365007E1C12;
+			remoteInfo = OculoTakeHome;
+		};
+		814A46EA29C38367007E1C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814A46C729C38365007E1C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814A46CE29C38365007E1C12;
+			remoteInfo = OculoTakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		814A46CF29C38365007E1C12 /* OculoTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OculoTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeApp.swift; sourceTree = "<group>"; };
+		814A46D429C38365007E1C12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		814A46D629C38367007E1C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814A46D929C38367007E1C12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		814A46DF29C38367007E1C12 /* OculoTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OculoTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		814A46E329C38367007E1C12 /* OculoTakeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeTests.swift; sourceTree = "<group>"; };
+		814A46E929C38367007E1C12 /* OculoTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OculoTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITests.swift; sourceTree = "<group>"; };
+		814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814A46CC29C38365007E1C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A46DC29C38367007E1C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A46E629C38367007E1C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814A46C629C38365007E1C12 = {
+			isa = PBXGroup;
+			children = (
+				814A46D129C38365007E1C12 /* OculoTakeHome */,
+				814A46E229C38367007E1C12 /* OculoTakeHomeTests */,
+				814A46EC29C38367007E1C12 /* OculoTakeHomeUITests */,
+				814A46D029C38365007E1C12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		814A46D029C38365007E1C12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814A46CF29C38365007E1C12 /* OculoTakeHome.app */,
+				814A46DF29C38367007E1C12 /* OculoTakeHomeTests.xctest */,
+				814A46E929C38367007E1C12 /* OculoTakeHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814A46D129C38365007E1C12 /* OculoTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */,
+				814A46D429C38365007E1C12 /* ContentView.swift */,
+				814A46D629C38367007E1C12 /* Assets.xcassets */,
+				814A46D829C38367007E1C12 /* Preview Content */,
+			);
+			path = OculoTakeHome;
+			sourceTree = "<group>";
+		};
+		814A46D829C38367007E1C12 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				814A46D929C38367007E1C12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		814A46E229C38367007E1C12 /* OculoTakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				814A46E329C38367007E1C12 /* OculoTakeHomeTests.swift */,
+			);
+			path = OculoTakeHomeTests;
+			sourceTree = "<group>";
+		};
+		814A46EC29C38367007E1C12 /* OculoTakeHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */,
+				814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */,
+			);
+			path = OculoTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814A46CE29C38365007E1C12 /* OculoTakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814A46F329C38367007E1C12 /* Build configuration list for PBXNativeTarget "OculoTakeHome" */;
+			buildPhases = (
+				814A46CB29C38365007E1C12 /* Sources */,
+				814A46CC29C38365007E1C12 /* Frameworks */,
+				814A46CD29C38365007E1C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OculoTakeHome;
+			productName = OculoTakeHome;
+			productReference = 814A46CF29C38365007E1C12 /* OculoTakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		814A46DE29C38367007E1C12 /* OculoTakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814A46F629C38367007E1C12 /* Build configuration list for PBXNativeTarget "OculoTakeHomeTests" */;
+			buildPhases = (
+				814A46DB29C38367007E1C12 /* Sources */,
+				814A46DC29C38367007E1C12 /* Frameworks */,
+				814A46DD29C38367007E1C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814A46E129C38367007E1C12 /* PBXTargetDependency */,
+			);
+			name = OculoTakeHomeTests;
+			productName = OculoTakeHomeTests;
+			productReference = 814A46DF29C38367007E1C12 /* OculoTakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		814A46E829C38367007E1C12 /* OculoTakeHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814A46F929C38367007E1C12 /* Build configuration list for PBXNativeTarget "OculoTakeHomeUITests" */;
+			buildPhases = (
+				814A46E529C38367007E1C12 /* Sources */,
+				814A46E629C38367007E1C12 /* Frameworks */,
+				814A46E729C38367007E1C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814A46EB29C38367007E1C12 /* PBXTargetDependency */,
+			);
+			name = OculoTakeHomeUITests;
+			productName = OculoTakeHomeUITests;
+			productReference = 814A46E929C38367007E1C12 /* OculoTakeHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814A46C729C38365007E1C12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					814A46CE29C38365007E1C12 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					814A46DE29C38367007E1C12 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 814A46CE29C38365007E1C12;
+					};
+					814A46E829C38367007E1C12 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 814A46CE29C38365007E1C12;
+					};
+				};
+			};
+			buildConfigurationList = 814A46CA29C38365007E1C12 /* Build configuration list for PBXProject "OculoTakeHome" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 814A46C629C38365007E1C12;
+			productRefGroup = 814A46D029C38365007E1C12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814A46CE29C38365007E1C12 /* OculoTakeHome */,
+				814A46DE29C38367007E1C12 /* OculoTakeHomeTests */,
+				814A46E829C38367007E1C12 /* OculoTakeHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814A46CD29C38365007E1C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814A46DA29C38367007E1C12 /* Preview Assets.xcassets in Resources */,
+				814A46D729C38367007E1C12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A46DD29C38367007E1C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A46E729C38367007E1C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814A46CB29C38365007E1C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814A46D529C38365007E1C12 /* ContentView.swift in Sources */,
+				814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A46DB29C38367007E1C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814A46E429C38367007E1C12 /* OculoTakeHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814A46E529C38367007E1C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814A46EE29C38367007E1C12 /* OculoTakeHomeUITests.swift in Sources */,
+				814A46F029C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		814A46E129C38367007E1C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814A46CE29C38365007E1C12 /* OculoTakeHome */;
+			targetProxy = 814A46E029C38367007E1C12 /* PBXContainerItemProxy */;
+		};
+		814A46EB29C38367007E1C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814A46CE29C38365007E1C12 /* OculoTakeHome */;
+			targetProxy = 814A46EA29C38367007E1C12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		814A46F129C38367007E1C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		814A46F229C38367007E1C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814A46F429C38367007E1C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OculoTakeHome/Preview Content\"";
+				DEVELOPMENT_TEAM = G28RVMY8Q8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harrison.Senesac.OculoTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		814A46F529C38367007E1C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OculoTakeHome/Preview Content\"";
+				DEVELOPMENT_TEAM = G28RVMY8Q8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harrison.Senesac.OculoTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		814A46F729C38367007E1C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G28RVMY8Q8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harrison.Senesac.OculoTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OculoTakeHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OculoTakeHome";
+			};
+			name = Debug;
+		};
+		814A46F829C38367007E1C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G28RVMY8Q8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harrison.Senesac.OculoTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OculoTakeHome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OculoTakeHome";
+			};
+			name = Release;
+		};
+		814A46FA29C38367007E1C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G28RVMY8Q8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harrison.Senesac.OculoTakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OculoTakeHome;
+			};
+			name = Debug;
+		};
+		814A46FB29C38367007E1C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G28RVMY8Q8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Harrison.Senesac.OculoTakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OculoTakeHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814A46CA29C38365007E1C12 /* Build configuration list for PBXProject "OculoTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814A46F129C38367007E1C12 /* Debug */,
+				814A46F229C38367007E1C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814A46F329C38367007E1C12 /* Build configuration list for PBXNativeTarget "OculoTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814A46F429C38367007E1C12 /* Debug */,
+				814A46F529C38367007E1C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814A46F629C38367007E1C12 /* Build configuration list for PBXNativeTarget "OculoTakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814A46F729C38367007E1C12 /* Debug */,
+				814A46F829C38367007E1C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814A46F929C38367007E1C12 /* Build configuration list for PBXNativeTarget "OculoTakeHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814A46FA29C38367007E1C12 /* Debug */,
+				814A46FB29C38367007E1C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 814A46C729C38365007E1C12 /* Project object */;
+}
