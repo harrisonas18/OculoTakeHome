@@ -14,6 +14,19 @@
 		814A46E429C38367007E1C12 /* OculoTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46E329C38367007E1C12 /* OculoTakeHomeTests.swift */; };
 		814A46EE29C38367007E1C12 /* OculoTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */; };
 		814A46F029C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */; };
+		814A470029C3848C007E1C12 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46FF29C3848C007E1C12 /* ContentViewModel.swift */; };
+		814A470229C384E9007E1C12 /* BurnSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470129C384E9007E1C12 /* BurnSummaryView.swift */; };
+		814A470429C384F6007E1C12 /* BurnSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */; };
+		814A470629C3864C007E1C12 /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470529C3864C007E1C12 /* SleepChartView.swift */; };
+		814A470829C3865B007E1C12 /* ActivityChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470729C3865B007E1C12 /* ActivityChartView.swift */; };
+		814A470A29C38671007E1C12 /* CaffeineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470929C38671007E1C12 /* CaffeineChartView.swift */; };
+		814A470C29C39235007E1C12 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470B29C39235007E1C12 /* Colors.swift */; };
+		814A470E29C3932D007E1C12 /* AddGoalsPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470D29C3932D007E1C12 /* AddGoalsPopoverView.swift */; };
+		814A471029C3933A007E1C12 /* AddGoalsPopoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470F29C3933A007E1C12 /* AddGoalsPopoverViewModel.swift */; };
+		814A471229C39769007E1C12 /* AddGoalsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A471129C39769007E1C12 /* AddGoalsButtonView.swift */; };
+		814A471429C39B3F007E1C12 /* BurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A471329C39B3F007E1C12 /* BurnView.swift */; };
+		814A471629C3B223007E1C12 /* GoalCellViewDisabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A471529C3B223007E1C12 /* GoalCellViewDisabled.swift */; };
+		814A471829C3B7C9007E1C12 /* GoalCellViewEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A471729C3B7C9007E1C12 /* GoalCellViewEnabled.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		814A46E929C38367007E1C12 /* OculoTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OculoTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		814A46ED29C38367007E1C12 /* OculoTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITests.swift; sourceTree = "<group>"; };
 		814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		814A46FF29C3848C007E1C12 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		814A470129C384E9007E1C12 /* BurnSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnSummaryView.swift; sourceTree = "<group>"; };
+		814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnSummaryViewModel.swift; sourceTree = "<group>"; };
+		814A470529C3864C007E1C12 /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
+		814A470729C3865B007E1C12 /* ActivityChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityChartView.swift; sourceTree = "<group>"; };
+		814A470929C38671007E1C12 /* CaffeineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineChartView.swift; sourceTree = "<group>"; };
+		814A470B29C39235007E1C12 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		814A470D29C3932D007E1C12 /* AddGoalsPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalsPopoverView.swift; sourceTree = "<group>"; };
+		814A470F29C3933A007E1C12 /* AddGoalsPopoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalsPopoverViewModel.swift; sourceTree = "<group>"; };
+		814A471129C39769007E1C12 /* AddGoalsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalsButtonView.swift; sourceTree = "<group>"; };
+		814A471329C39B3F007E1C12 /* BurnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnView.swift; sourceTree = "<group>"; };
+		814A471529C3B223007E1C12 /* GoalCellViewDisabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellViewDisabled.swift; sourceTree = "<group>"; };
+		814A471729C3B7C9007E1C12 /* GoalCellViewEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellViewEnabled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +120,12 @@
 		814A46D129C38365007E1C12 /* OculoTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				814A46FE29C38459007E1C12 /* ContentView */,
+				814A46FD29C3842E007E1C12 /* AddGoals */,
+				814A46FC29C3841A007E1C12 /* BurnSummary */,
 				814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */,
-				814A46D429C38365007E1C12 /* ContentView.swift */,
 				814A46D629C38367007E1C12 /* Assets.xcassets */,
+				814A470B29C39235007E1C12 /* Colors.swift */,
 				814A46D829C38367007E1C12 /* Preview Content */,
 			);
 			path = OculoTakeHome;
@@ -125,6 +154,40 @@
 				814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */,
 			);
 			path = OculoTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+		814A46FC29C3841A007E1C12 /* BurnSummary */ = {
+			isa = PBXGroup;
+			children = (
+				814A470129C384E9007E1C12 /* BurnSummaryView.swift */,
+				814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */,
+				814A470529C3864C007E1C12 /* SleepChartView.swift */,
+				814A470729C3865B007E1C12 /* ActivityChartView.swift */,
+				814A470929C38671007E1C12 /* CaffeineChartView.swift */,
+				814A471129C39769007E1C12 /* AddGoalsButtonView.swift */,
+				814A471329C39B3F007E1C12 /* BurnView.swift */,
+			);
+			path = BurnSummary;
+			sourceTree = "<group>";
+		};
+		814A46FD29C3842E007E1C12 /* AddGoals */ = {
+			isa = PBXGroup;
+			children = (
+				814A470D29C3932D007E1C12 /* AddGoalsPopoverView.swift */,
+				814A470F29C3933A007E1C12 /* AddGoalsPopoverViewModel.swift */,
+				814A471529C3B223007E1C12 /* GoalCellViewDisabled.swift */,
+				814A471729C3B7C9007E1C12 /* GoalCellViewEnabled.swift */,
+			);
+			path = AddGoals;
+			sourceTree = "<group>";
+		};
+		814A46FE29C38459007E1C12 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				814A46D429C38365007E1C12 /* ContentView.swift */,
+				814A46FF29C3848C007E1C12 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +320,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814A470A29C38671007E1C12 /* CaffeineChartView.swift in Sources */,
+				814A471229C39769007E1C12 /* AddGoalsButtonView.swift in Sources */,
+				814A470C29C39235007E1C12 /* Colors.swift in Sources */,
+				814A470229C384E9007E1C12 /* BurnSummaryView.swift in Sources */,
+				814A471829C3B7C9007E1C12 /* GoalCellViewEnabled.swift in Sources */,
+				814A470629C3864C007E1C12 /* SleepChartView.swift in Sources */,
+				814A470429C384F6007E1C12 /* BurnSummaryViewModel.swift in Sources */,
+				814A470E29C3932D007E1C12 /* AddGoalsPopoverView.swift in Sources */,
+				814A470829C3865B007E1C12 /* ActivityChartView.swift in Sources */,
+				814A471429C39B3F007E1C12 /* BurnView.swift in Sources */,
 				814A46D529C38365007E1C12 /* ContentView.swift in Sources */,
 				814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */,
+				814A471629C3B223007E1C12 /* GoalCellViewDisabled.swift in Sources */,
+				814A471029C3933A007E1C12 /* AddGoalsPopoverViewModel.swift in Sources */,
+				814A470029C3848C007E1C12 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +496,7 @@
 				DEVELOPMENT_TEAM = G28RVMY8Q8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oculo Take Home";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +526,7 @@
 				DEVELOPMENT_TEAM = G28RVMY8Q8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oculo Take Home";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

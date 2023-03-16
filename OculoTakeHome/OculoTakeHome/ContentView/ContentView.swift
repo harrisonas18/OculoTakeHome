@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var vm = ContentViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+                vm.showBurnSummary = true
+            } label: {
+                Text("Show Burn Summary")
+            }
+            .fullScreenCover(isPresented: $vm.showBurnSummary) {
+                BurnSummaryView()
+            }
+
         }
         .padding()
     }
