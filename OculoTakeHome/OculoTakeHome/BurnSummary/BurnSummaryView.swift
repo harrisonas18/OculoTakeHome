@@ -50,7 +50,6 @@ struct BurnSummaryView: View {
                 }
                 .popover(isPresented: $vm.showAddGoalsPopover) {
                     AddGoalsPopoverView()
-                        .background(Colors.clearColor)
                 }
             }
             .padding()

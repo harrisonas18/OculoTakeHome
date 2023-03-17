@@ -16,30 +16,11 @@ struct SleepChartView: View {
                     .foregroundColor(Colors.cellTitleText)
                 Text("You slept less than 8 hours last night")
                     .foregroundColor(Colors.cellSubTitleText)
-                Chart {
-                    BarMark(
-                            x: .value("Shape Type", "12 AM - 02 AM"),
-                            y: .value("Total Count", 1)
-                        )
-                    BarMark(
-                            x: .value("Shape Type", "02 AM"),
-                            y: .value("Total Count", 1)
-                        )
-                    BarMark(
-                            x: .value("Shape Type", "04 AM"),
-                            y: .value("Total Count", 1)
-                        )
-                    BarMark(
-                            x: .value("Shape Type", "06 AM"),
-                            y: .value("Total Count", 1)
-                        )
-                    BarMark(
-                            x: .value("Shape Type", "08 AM"),
-                            y: .value("Total Count", 1)
-                        )
-                }
-                .foregroundColor(Colors.sleepCellChartData)
-                .frame(height: 50)
+                TimeSheetChartView(isOverview: false)
+                    .frame(height: 125)
+                    .scrollDisabled(true)
+                    .scrollContentBackground(.hidden)
+                    .listStyle(.plain)
             }
             Spacer()
         }
