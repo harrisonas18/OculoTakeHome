@@ -1,17 +1,13 @@
 //
+//  AccessibilityHelpers.swift
+//  OculoTakeHome
+//
+//  Created by Harrison Senesac on 3/17/23.
+//
 // Copyright © 2022 Swift Charts Examples.
 // Open Source - MIT License
 
 import SwiftUI
-
-/*
- This file collects functions used by
- the Accessibility descriptors of charts for data that is re-used across chart types.
- 
- The detailed versions simply use accessibilityLabel/accessibilityValue for each Mark.
-
- NOTE: Filed FB10320202 indicating some Mark types do not use label/value set on the Mark
- */
 
 extension TimeInterval {
     var accessibilityDurationFormatter: DateComponentsFormatter {

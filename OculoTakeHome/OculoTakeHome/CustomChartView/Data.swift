@@ -1,4 +1,9 @@
 //
+//  Data.swift
+//  OculoTakeHome
+//
+//  Created by Harrison Senesac on 3/17/23.
+//
 // Copyright © 2022 Swift Charts Examples.
 // Open Source - MIT License
 
@@ -15,39 +20,49 @@ enum Constants {
 
 // MARK: - Time Sheet data
 
+class DataHelpers {
+    static func getEventsTotalDuration(_ events: [(category: String, clockIn: Date, clockOut: Date)]) -> String {
+        var durationInSeconds: TimeInterval = 0
+        for event in events {
+            durationInSeconds += event.clockIn.distance(to: event.clockOut)
+        }
+        return getFormattedDuration(seconds: durationInSeconds)
+    }
+
+    static func getFormattedDuration(seconds: Double) -> String {
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated
+        formatter.zeroFormattingBehavior = .pad
+        formatter.allowedUnits = [.hour, .minute]
+
+        return formatter.string(from: seconds) ?? "N/A"
+    }
+}
+
 enum TimeSheetData {
-    static let lastDay = [
+    static let sleep = [
         /// Sleep
-        (department: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 28)),
-        (department: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 13, hour: 12, minutes: 04)),
-        (department: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 10)),
-        (department: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 01)),
-        (department: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2022, month: 6, day: 13, hour: 18, minutes: 08))
+        (category: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 28)),
+        (category: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 13, hour: 12, minutes: 04)),
+        (category: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 10)),
+        (category: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 01)),
+        (category: "Sleep", clockIn: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2022, month: 6, day: 13, hour: 18, minutes: 08))
         ]
-    /// Time Sheet Date for the last week
-    static let lastWeek = [
-        /// Monday
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 28)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 13, hour: 12, minutes: 04)),
-        (department: "Butchery", clockIn: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 10)),
-        (department: "Butchery", clockIn: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 01)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2022, month: 6, day: 13, hour: 18, minutes: 08)),
-        /// Tuesday
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 14, hour: 09, minutes: 28)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 14, hour: 12, minutes: 04)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 14, hour: 15, minutes: 10)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 14, hour: 17, minutes: 01)),
-        /// Wednesday
-        (department: "Counter", clockIn: date(year: 2022, month: 6, day: 15, hour: 15, minutes: 58), clockOut: date(year: 2022, month: 6, day: 15, hour: 18, minutes: 34)),
-        (department: "Counter", clockIn: date(year: 2022, month: 6, day: 15, hour: 19, minutes: 03), clockOut: date(year: 2022, month: 6, day: 15, hour: 22, minutes: 10)),
-        /// Thursday
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 05, minutes: 15), clockOut: date(year: 2022, month: 6, day: 17, hour: 06, minutes: 13)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 06, minutes: 33), clockOut: date(year: 2022, month: 6, day: 17, hour: 08, minutes: 52)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 09, minutes: 15), clockOut: date(year: 2022, month: 6, day: 17, hour: 11, minutes: 46)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 12, minutes: 58), clockOut: date(year: 2022, month: 6, day: 17, hour: 14, minutes: 26)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 15, minutes: 05), clockOut: date(year: 2022, month: 6, day: 17, hour: 15, minutes: 51)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 19, minutes: 33), clockOut: date(year: 2022, month: 6, day: 17, hour: 21, minutes: 01))
-    ]
+    
+    static let activity = [
+        /// Sleep
+        (category: "Activity", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 28)),
+        (category: "Activity", clockIn: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 13, hour: 10, minutes: 04)),
+        (category: "Activity", clockIn: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 10)),
+        (category: "Activity", clockIn: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 13, hour: 16, minutes: 01)),
+        (category: "Activity", clockIn: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 16))
+        ]
+    
+    static let caffeine = [
+        /// Sleep
+        (category: "Caffeine", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 28)),
+        ]
+    
 }
 
 extension Date {

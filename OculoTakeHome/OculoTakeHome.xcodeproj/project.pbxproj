@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		810A23D029C3DB8000A8ED08 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23CE29C3DB8000A8ED08 /* ContentViewModel.swift */; };
 		810A23D129C3DB8000A8ED08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23CF29C3DB8000A8ED08 /* ContentView.swift */; };
-		810A23D429C3DD1E00A8ED08 /* CustomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23D329C3DD1E00A8ED08 /* CustomChartView.swift */; };
 		810A23D929C4D78600A8ED08 /* TimeSheetChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23D829C4D78600A8ED08 /* TimeSheetChartView.swift */; };
 		810A23DB29C4D87800A8ED08 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23DA29C4D87800A8ED08 /* Data.swift */; };
 		810A23DD29C4D91D00A8ED08 /* AccessibilityHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23DC29C4D91D00A8ED08 /* AccessibilityHelpers.swift */; };
 		810A23DF29C4D93600A8ED08 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23DE29C4D93600A8ED08 /* ChartType.swift */; };
-		810A23E129C4D97E00A8ED08 /* StackedArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23E029C4D97E00A8ED08 /* StackedArea.swift */; };
+		810A23E329C6262300A8ED08 /* GoalCellButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23E229C6262300A8ED08 /* GoalCellButtonView.swift */; };
+		810A23E529C6282600A8ED08 /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23E429C6282600A8ED08 /* GoalModel.swift */; };
+		810A23E729C62BAD00A8ED08 /* AddButtonViewEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23E629C62BAD00A8ED08 /* AddButtonViewEnabled.swift */; };
+		810A23E929C62C1300A8ED08 /* AddButtonViewDisabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23E829C62C1300A8ED08 /* AddButtonViewDisabled.swift */; };
+		810A23EF29C6414E00A8ED08 /* CategoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23EE29C6414E00A8ED08 /* CategoryChartView.swift */; };
+		810A23F229C6988100A8ED08 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23F129C6988100A8ED08 /* CategoryModel.swift */; };
+		810A23F429C698B900A8ED08 /* BurnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23F329C698B900A8ED08 /* BurnModel.swift */; };
+		810A23F629C6995B00A8ED08 /* TimeSheetChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A23F529C6995B00A8ED08 /* TimeSheetChartModel.swift */; };
 		814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */; };
 		814A46D729C38367007E1C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814A46D629C38367007E1C12 /* Assets.xcassets */; };
 		814A46DA29C38367007E1C12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814A46D929C38367007E1C12 /* Preview Assets.xcassets */; };
@@ -23,9 +29,6 @@
 		814A46F029C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */; };
 		814A470229C384E9007E1C12 /* BurnSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470129C384E9007E1C12 /* BurnSummaryView.swift */; };
 		814A470429C384F6007E1C12 /* BurnSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */; };
-		814A470629C3864C007E1C12 /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470529C3864C007E1C12 /* SleepChartView.swift */; };
-		814A470829C3865B007E1C12 /* ActivityChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470729C3865B007E1C12 /* ActivityChartView.swift */; };
-		814A470A29C38671007E1C12 /* CaffeineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470929C38671007E1C12 /* CaffeineChartView.swift */; };
 		814A470C29C39235007E1C12 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470B29C39235007E1C12 /* Colors.swift */; };
 		814A470E29C3932D007E1C12 /* AddGoalsPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470D29C3932D007E1C12 /* AddGoalsPopoverView.swift */; };
 		814A471029C3933A007E1C12 /* AddGoalsPopoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814A470F29C3933A007E1C12 /* AddGoalsPopoverViewModel.swift */; };
@@ -55,12 +58,18 @@
 /* Begin PBXFileReference section */
 		810A23CE29C3DB8000A8ED08 /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewModel.swift; path = OculoTakeHome/ContentViewModel.swift; sourceTree = SOURCE_ROOT; };
 		810A23CF29C3DB8000A8ED08 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = OculoTakeHome/ContentView.swift; sourceTree = SOURCE_ROOT; };
-		810A23D329C3DD1E00A8ED08 /* CustomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChartView.swift; sourceTree = "<group>"; };
 		810A23D829C4D78600A8ED08 /* TimeSheetChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetChartView.swift; sourceTree = "<group>"; };
 		810A23DA29C4D87800A8ED08 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		810A23DC29C4D91D00A8ED08 /* AccessibilityHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityHelpers.swift; sourceTree = "<group>"; };
 		810A23DE29C4D93600A8ED08 /* ChartType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
-		810A23E029C4D97E00A8ED08 /* StackedArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackedArea.swift; sourceTree = "<group>"; };
+		810A23E229C6262300A8ED08 /* GoalCellButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellButtonView.swift; sourceTree = "<group>"; };
+		810A23E429C6282600A8ED08 /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
+		810A23E629C62BAD00A8ED08 /* AddButtonViewEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonViewEnabled.swift; sourceTree = "<group>"; };
+		810A23E829C62C1300A8ED08 /* AddButtonViewDisabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonViewDisabled.swift; sourceTree = "<group>"; };
+		810A23EE29C6414E00A8ED08 /* CategoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChartView.swift; sourceTree = "<group>"; };
+		810A23F129C6988100A8ED08 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		810A23F329C698B900A8ED08 /* BurnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnModel.swift; sourceTree = "<group>"; };
+		810A23F529C6995B00A8ED08 /* TimeSheetChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetChartModel.swift; sourceTree = "<group>"; };
 		814A46CF29C38365007E1C12 /* OculoTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OculoTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeApp.swift; sourceTree = "<group>"; };
 		814A46D629C38367007E1C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,9 +81,6 @@
 		814A46EF29C38367007E1C12 /* OculoTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OculoTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		814A470129C384E9007E1C12 /* BurnSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnSummaryView.swift; sourceTree = "<group>"; };
 		814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnSummaryViewModel.swift; sourceTree = "<group>"; };
-		814A470529C3864C007E1C12 /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
-		814A470729C3865B007E1C12 /* ActivityChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityChartView.swift; sourceTree = "<group>"; };
-		814A470929C38671007E1C12 /* CaffeineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineChartView.swift; sourceTree = "<group>"; };
 		814A470B29C39235007E1C12 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		814A470D29C3932D007E1C12 /* AddGoalsPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalsPopoverView.swift; sourceTree = "<group>"; };
 		814A470F29C3933A007E1C12 /* AddGoalsPopoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalsPopoverViewModel.swift; sourceTree = "<group>"; };
@@ -112,14 +118,42 @@
 		810A23D229C3DBE100A8ED08 /* CustomChartView */ = {
 			isa = PBXGroup;
 			children = (
-				810A23D329C3DD1E00A8ED08 /* CustomChartView.swift */,
 				810A23D829C4D78600A8ED08 /* TimeSheetChartView.swift */,
 				810A23DA29C4D87800A8ED08 /* Data.swift */,
 				810A23DC29C4D91D00A8ED08 /* AccessibilityHelpers.swift */,
 				810A23DE29C4D93600A8ED08 /* ChartType.swift */,
-				810A23E029C4D97E00A8ED08 /* StackedArea.swift */,
 			);
 			path = CustomChartView;
+			sourceTree = "<group>";
+		};
+		810A23EA29C62CB200A8ED08 /* AddButton */ = {
+			isa = PBXGroup;
+			children = (
+				810A23E629C62BAD00A8ED08 /* AddButtonViewEnabled.swift */,
+				810A23E829C62C1300A8ED08 /* AddButtonViewDisabled.swift */,
+			);
+			path = AddButton;
+			sourceTree = "<group>";
+		};
+		810A23EB29C62CC300A8ED08 /* GoalCell */ = {
+			isa = PBXGroup;
+			children = (
+				814A471529C3B223007E1C12 /* GoalCellViewDisabled.swift */,
+				814A471729C3B7C9007E1C12 /* GoalCellViewEnabled.swift */,
+				810A23E229C6262300A8ED08 /* GoalCellButtonView.swift */,
+			);
+			path = GoalCell;
+			sourceTree = "<group>";
+		};
+		810A23F029C6986400A8ED08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				810A23E429C6282600A8ED08 /* GoalModel.swift */,
+				810A23F129C6988100A8ED08 /* CategoryModel.swift */,
+				810A23F329C698B900A8ED08 /* BurnModel.swift */,
+				810A23F529C6995B00A8ED08 /* TimeSheetChartModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		814A46C629C38365007E1C12 = {
@@ -145,6 +179,7 @@
 		814A46D129C38365007E1C12 /* OculoTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				810A23F029C6986400A8ED08 /* Models */,
 				810A23D229C3DBE100A8ED08 /* CustomChartView */,
 				810A23CF29C3DB8000A8ED08 /* ContentView.swift */,
 				810A23CE29C3DB8000A8ED08 /* ContentViewModel.swift */,
@@ -188,9 +223,7 @@
 			children = (
 				814A470129C384E9007E1C12 /* BurnSummaryView.swift */,
 				814A470329C384F6007E1C12 /* BurnSummaryViewModel.swift */,
-				814A470529C3864C007E1C12 /* SleepChartView.swift */,
-				814A470729C3865B007E1C12 /* ActivityChartView.swift */,
-				814A470929C38671007E1C12 /* CaffeineChartView.swift */,
+				810A23EE29C6414E00A8ED08 /* CategoryChartView.swift */,
 				814A471129C39769007E1C12 /* AddGoalsButtonView.swift */,
 				814A471329C39B3F007E1C12 /* BurnView.swift */,
 			);
@@ -202,8 +235,8 @@
 			children = (
 				814A470D29C3932D007E1C12 /* AddGoalsPopoverView.swift */,
 				814A470F29C3933A007E1C12 /* AddGoalsPopoverViewModel.swift */,
-				814A471529C3B223007E1C12 /* GoalCellViewDisabled.swift */,
-				814A471729C3B7C9007E1C12 /* GoalCellViewEnabled.swift */,
+				810A23EA29C62CB200A8ED08 /* AddButton */,
+				810A23EB29C62CC300A8ED08 /* GoalCell */,
 			);
 			path = AddGoals;
 			sourceTree = "<group>";
@@ -338,25 +371,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814A470A29C38671007E1C12 /* CaffeineChartView.swift in Sources */,
 				814A471229C39769007E1C12 /* AddGoalsButtonView.swift in Sources */,
-				810A23E129C4D97E00A8ED08 /* StackedArea.swift in Sources */,
 				814A470C29C39235007E1C12 /* Colors.swift in Sources */,
+				810A23E929C62C1300A8ED08 /* AddButtonViewDisabled.swift in Sources */,
+				810A23F429C698B900A8ED08 /* BurnModel.swift in Sources */,
+				810A23E729C62BAD00A8ED08 /* AddButtonViewEnabled.swift in Sources */,
 				814A470229C384E9007E1C12 /* BurnSummaryView.swift in Sources */,
 				810A23D929C4D78600A8ED08 /* TimeSheetChartView.swift in Sources */,
 				814A471829C3B7C9007E1C12 /* GoalCellViewEnabled.swift in Sources */,
-				814A470629C3864C007E1C12 /* SleepChartView.swift in Sources */,
 				810A23DD29C4D91D00A8ED08 /* AccessibilityHelpers.swift in Sources */,
 				810A23DB29C4D87800A8ED08 /* Data.swift in Sources */,
 				814A470429C384F6007E1C12 /* BurnSummaryViewModel.swift in Sources */,
 				810A23DF29C4D93600A8ED08 /* ChartType.swift in Sources */,
+				810A23F229C6988100A8ED08 /* CategoryModel.swift in Sources */,
 				814A470E29C3932D007E1C12 /* AddGoalsPopoverView.swift in Sources */,
-				810A23D429C3DD1E00A8ED08 /* CustomChartView.swift in Sources */,
-				814A470829C3865B007E1C12 /* ActivityChartView.swift in Sources */,
 				814A471429C39B3F007E1C12 /* BurnView.swift in Sources */,
+				810A23E529C6282600A8ED08 /* GoalModel.swift in Sources */,
 				810A23D029C3DB8000A8ED08 /* ContentViewModel.swift in Sources */,
 				810A23D129C3DB8000A8ED08 /* ContentView.swift in Sources */,
 				814A46D329C38365007E1C12 /* OculoTakeHomeApp.swift in Sources */,
+				810A23F629C6995B00A8ED08 /* TimeSheetChartModel.swift in Sources */,
+				810A23E329C6262300A8ED08 /* GoalCellButtonView.swift in Sources */,
+				810A23EF29C6414E00A8ED08 /* CategoryChartView.swift in Sources */,
 				814A471629C3B223007E1C12 /* GoalCellViewDisabled.swift in Sources */,
 				814A471029C3933A007E1C12 /* AddGoalsPopoverViewModel.swift in Sources */,
 			);

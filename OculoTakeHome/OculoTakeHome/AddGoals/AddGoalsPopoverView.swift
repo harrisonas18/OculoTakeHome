@@ -15,7 +15,6 @@ struct AddGoalsPopoverView: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 16){
-                
                 HStack {
                     Text("Add Goals")
                         .foregroundColor(.white)
@@ -25,96 +24,40 @@ struct AddGoalsPopoverView: View {
                     Button {
                         dismiss()
                     } label: {
-                        Image(systemName: "xmark")
+                        Image("closeIcon")
                             .foregroundColor(.white)
                     }
                 }
                 Text("Select recommendations you'd like to set as a goal")
                     .foregroundColor(Colors.subTitleText)
                 VStack(alignment: .leading, spacing: 16) {
-                    Button {
-                        vm.cellOneGoal.toggle()
-                    } label: {
-                        if vm.cellOneGoal {
-                            GoalCellViewEnabled(cellText: "Spend 30 minutes on activity")
-                        } else {
-                            GoalCellViewDisabled(cellText: "Spend 30 minutes on activity")
+                    ForEach(0..<vm.goals.count, id: \.self) { i in
+                        Button {
+                            vm.goals[i].isSelected.toggle()
+                        } label: {
+                            if vm.goals[i].isSelected {
+                                GoalCellViewEnabled(cellText: vm.goals[i].title)
+                            } else {
+                                GoalCellViewDisabled(cellText: vm.goals[i].title)
+                            }
                         }
-                        
-                    }
-                    Button {
-                        vm.cellTwoGoal.toggle()
-                    } label: {
-                        if vm.cellTwoGoal {
-                            GoalCellViewEnabled(cellText: "Finish eating 2 hours before bedtime")
-                        } else {
-                            GoalCellViewDisabled(cellText: "Finish eating 2 hours before bedtime")
-                        }
-                        
-                    }
-                    Button {
-                        vm.cellThreeGoal.toggle()
-                    } label: {
-                        if vm.cellThreeGoal {
-                            GoalCellViewEnabled(cellText: "Take a cold shower")
-                        } else {
-                            GoalCellViewDisabled(cellText: "Take a cold shower")
-                        }
-                        
-                    }
-                    Button {
-                        vm.cellFourGoal.toggle()
-                    } label: {
-                        if vm.cellFourGoal {
-                            GoalCellViewEnabled(cellText: "Sleep 8 hours")
-                        } else {
-                            GoalCellViewDisabled(cellText: "Sleep 8 hours")
-                        }
-                        
-                    }
-                    Button {
-                        vm.cellFiveGoal.toggle()
-                    } label: {
-                        if vm.cellFiveGoal {
-                            GoalCellViewEnabled(cellText: "Do morning meditation")
-                        } else {
-                            GoalCellViewDisabled(cellText: "Do morning meditation")
-                        }
-                        
                     }
                 }
                 Spacer()
                     .frame(height: 30)
                 Button {
-                    dismiss()
-                } label: {
-                    
-                    if  vm.cellOneGoal ||
-                        vm.cellTwoGoal ||
-                        vm.cellThreeGoal ||
-                        vm.cellFourGoal ||
-                        vm.cellFiveGoal
-                    {
-                        Text("ADD")
-                            .padding()
-                            .fontWeight(.bold)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .foregroundColor(Colors.goalCellBackground)
-                            .background(Colors.addGoalsButtonBackgroundEnabled)
-                            .cornerRadius(16)
-                    } else {
-                        Text("ADD")
-                            .padding()
-                            .fontWeight(.bold)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .foregroundColor(Colors.addGoalsButtonText)
-                            .background(Colors.addGoalsButtonBackgroundDisabled)
-                            .cornerRadius(16)
-                            .disabled(true)
+                    if  vm.goals.contains(where: { $0.isSelected }) {
+                        //TODO: This is where save goals function would be called
+                        dismiss()
                     }
-                    
-                    
+                } label: {
+                    if  vm.goals.contains(where: { $0.isSelected }) {
+                        AddButtonViewEnabled()
+                    } else {
+                        AddButtonViewDisabled()
+                    }
                 }
+                .disabled(!vm.goals.contains(where: { $0.isSelected }))
                 Spacer()
                     .frame(height: 30)
                 Spacer()

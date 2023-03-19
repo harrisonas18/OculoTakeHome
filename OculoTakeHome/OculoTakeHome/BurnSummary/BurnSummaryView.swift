@@ -28,21 +28,21 @@ struct BurnSummaryView: View {
                         Button {
                             dismiss()
                         } label: {
-                            Image(systemName: "xmark")
+                            Image("closeIcon")
                                 .foregroundColor(.white)
                         }
                     }
                 }
-                BurnView()
+                BurnView(burnRateModel: vm.burnModel)
                 HStack {
                     Text("FACTORS")
                         .foregroundColor(Colors.cellSubTitleText)
                         .fontWeight(.bold)
                     Spacer()
                 }
-                SleepChartView()
-                ActivityChartView()
-                CaffeineChartView()
+                ForEach(vm.categories, id: \.self) { category in
+                    CategoryChartView(category: category)
+                }
                 Button {
                     vm.showAddGoalsPopover = true
                 } label: {
@@ -54,7 +54,7 @@ struct BurnSummaryView: View {
             }
             .padding()
         }
-        .background(Color("BurnSummaryBackground"))
+        .background(Colors.burnSummaryBackground)
     }
 }
 

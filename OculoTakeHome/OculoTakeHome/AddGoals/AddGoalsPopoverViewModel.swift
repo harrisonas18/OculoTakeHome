@@ -9,10 +9,12 @@ import Foundation
 
 class AddGoalsPopoverViewModel: ObservableObject {
     
-    @Published var cellOneGoal = false
-    @Published var cellTwoGoal = false
-    @Published var cellThreeGoal = false
-    @Published var cellFourGoal = false
-    @Published var cellFiveGoal = false
-    
+    @Published var goals = [
+        Goal(title: "Spend 30 minutes on activity", isSelected: false),
+        Goal(title: "Finish eating 2 hours before bedtime", isSelected: false),
+        Goal(title: "Take a cold shower", isSelected: false),
+        Goal(title: "Sleep 8 hours", isSelected: false),
+        Goal(title: "Do morning meditation", isSelected: false)
+    ]
+
 }
