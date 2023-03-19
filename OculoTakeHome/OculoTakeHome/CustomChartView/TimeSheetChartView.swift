@@ -111,27 +111,6 @@ struct EventChart: View {
             .padding(.top, 5)
             .frame(height: Constants.detailChartHeight)
             .chartXScale(domain: chartXScaleRangeStart...chartXScaleRangeEnd)
-//            .chartOverlay { proxy in
-//                GeometryReader { geoProxy in
-//                    Rectangle()
-//                        .fill(.clear).contentShape(Rectangle())
-//                        .gesture(
-//                            SpatialTapGesture()
-//                                .onEnded { value in
-//                                    let location = value.location
-//
-//                                    if let date: Date = proxy.value(atX: location.x) {
-//                                        if let event = events.first(where: { _, clockedIn, clockedOut in
-//                                            date >= clockedIn && date <= clockedOut
-//                                        }) {
-//                                            self.selectedEvent = event
-//                                            self.plotWidth = proxy.plotAreaSize.width
-//                                        }
-//                                    }
-//                                }
-//                        )
-//                }
-//            }
         }
     }
 

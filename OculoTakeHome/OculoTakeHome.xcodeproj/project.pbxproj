@@ -179,13 +179,13 @@
 		814A46D129C38365007E1C12 /* OculoTakeHome */ = {
 			isa = PBXGroup;
 			children = (
-				810A23F029C6986400A8ED08 /* Models */,
-				810A23D229C3DBE100A8ED08 /* CustomChartView */,
+				814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */,
 				810A23CF29C3DB8000A8ED08 /* ContentView.swift */,
 				810A23CE29C3DB8000A8ED08 /* ContentViewModel.swift */,
+				810A23F029C6986400A8ED08 /* Models */,
+				810A23D229C3DBE100A8ED08 /* CustomChartView */,
 				814A46FD29C3842E007E1C12 /* AddGoals */,
 				814A46FC29C3841A007E1C12 /* BurnSummary */,
-				814A46D229C38365007E1C12 /* OculoTakeHomeApp.swift */,
 				814A46D629C38367007E1C12 /* Assets.xcassets */,
 				814A470B29C39235007E1C12 /* Colors.swift */,
 				814A46D829C38367007E1C12 /* Preview Content */,

@@ -13,17 +13,24 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Image("OculoIcon")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 120, height: 120)
             Button {
                 vm.showBurnSummary = true
             } label: {
                 Text("Show Burn Summary")
+                    .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
             }
+            .buttonStyle(.borderedProminent)
             .fullScreenCover(isPresented: $vm.showBurnSummary) {
                 BurnSummaryView()
             }
 
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Colors.burnSummaryBackground)
     }
 }
 
